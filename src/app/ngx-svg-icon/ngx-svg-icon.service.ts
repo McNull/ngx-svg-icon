@@ -20,7 +20,6 @@ export class NgxSvgIconService {
 
   constructor( @Optional() config: NgxSvgIconServiceConfig) {
     this.path = config ? config.basePath : '/assets'
-    console.log('MAM: ', this.path)
   }
 
   /**
