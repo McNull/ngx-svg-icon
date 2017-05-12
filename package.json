@@ -1,6 +1,6 @@
 {
   "name": "ngx-svg-icon",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Use custom SVG icon easily in your Angular (4.x) application",
   "main": "src/app/ngx-svg-icon",
   "scripts": {
