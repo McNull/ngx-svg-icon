@@ -16,7 +16,7 @@ npm install ngx-svg-icon --save
 ## Usage
 In your app.module file:
 ```js
-import { NgxSvgIconModule } from './ngx-svg-icon/ngx-svg-icon.module'
+import { NgxSvgIconModule } from 'ngx-svg-icon'
 
 @NgModule({
   ...
