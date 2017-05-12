@@ -1,0 +1,58 @@
+{
+  "name": "ngx-svg-icon",
+  "version": "1.0.0",
+  "description": "Use custom SVG icon easily in your Angular (4.x) application",
+  "main": "src/app/ngx-svg-icon",
+  "scripts": {
+    "icons:generate": "npm run icons:optimize && npm run icons:sprite",
+    "icons:optimize": "svgo -f ./src/icons --quiet",
+    "icons:sprite": "svg-sprite --symbol --inline --ss=\"icons.svg\" --symbol-dest=\"\" --dest=src/assets src/icons/*.svg",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ng serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achwilko/ngx-svg-icon.git"
+  },
+  "keywords": [
+    "angular",
+    "SVG",
+    "icon"
+  ],
+  "author": "Adam Chwilkowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/achwilko/ngx-svg-icon/issues"
+  },
+  "homepage": "https://github.com/achwilko/ngx-svg-icon#readme",
+
+  "devDependencies": {
+    "@angular/cli": "1.0.3",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~2.0.0",
+    "core-js": "^2.4.1",
+    "jasmine-core": "~2.5.2",
+    "jasmine-spec-reporter": "~3.2.0",
+    "karma": "~1.4.1",
+    "karma-chrome-launcher": "~2.1.1",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "rxjs": "^5.1.0",
+    "svg-sprite": "^1.3.6",
+    "svgo": "^0.7.2",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.5.0",
+    "typescript": "~2.2.0",
+    "zone.js": "^0.8.4"
+  }
+}
