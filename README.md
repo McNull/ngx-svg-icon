@@ -17,7 +17,7 @@ npm install ngx-svg-icon --save
 
 ## Usage
 In your app.module file:
-```js
+```ts
 import { NgxSvgIconModule } from 'ngx-svg-icon'
 
 @NgModule({
@@ -31,7 +31,7 @@ import { NgxSvgIconModule } from 'ngx-svg-icon'
 
 In your components:
 ```html
-  <svg-icon name="svg_icon_name" [size]="64"></svg-icon>
+<svg-icon name="svg_icon_name" [size]="64"></svg-icon>
 ```
 - **name** - SVG sprite symbol id value (note below)
 - **size** - icon size in px (16 is default)
@@ -48,14 +48,14 @@ In your components:
 </svg>
 ```
 ```html
-  <!-- Alarm icon usage based on above SVG sprite -->
-  <svg-icon name="alarm" [size]="32"></svg-icon>
+<!-- Alarm icon usage based on above SVG sprite -->
+<svg-icon name="alarm" [size]="32"></svg-icon>
 ```
 
 
 ## Configuration
 By default, &lt;svg-icon> component will look for SVG sprite in **"/src/assets"** folder. Provide **"basePath"** to change the default path:
-```js
+```ts
 import { NgxSvgIconModule } from 'ngx-svg-icon'
 
 @NgModule({
